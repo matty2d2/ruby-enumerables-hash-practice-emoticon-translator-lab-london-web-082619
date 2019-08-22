@@ -9,9 +9,9 @@ def load_library(path)
   emot_hash["get_emoticon"] = Hash.new
   emot_hash["get_meaning"] = Hash.new
 
-  emoticons.each do |eng_word, emoticon_set|
+  emoticons.each do |eng_word, emot_set|
     emot_hash["get_emoticon"][emoticon_set.first] = emoticon_set.last
-    emot_hash["get_meaning"][emoticon_set.last] = english_word
+    emot_hash["get_meaning"][emoticon_set.last] = eng_word
   end
   emot_hash
 end
