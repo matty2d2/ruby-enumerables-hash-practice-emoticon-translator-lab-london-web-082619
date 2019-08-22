@@ -11,7 +11,7 @@ def load_library(path)
 
   emoticons.each do |eng_word, emot_set|
     emot_hash["get_emoticon"][emot_set.first] = emoticon_set.last
-    emot_hash["get_meaning"][emoticon_set.last] = eng_word
+    emot_hash["get_meaning"][emot_set.last] = eng_word
   end
   emot_hash
 end
