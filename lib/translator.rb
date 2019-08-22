@@ -1,6 +1,6 @@
 # require modules here
 
-def load_library
+def load_library(path)
   emoticons = YAML.load_file(path)
   emoticon_hash = Hash.new
 
